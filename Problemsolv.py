@@ -10,6 +10,7 @@ class location:
         self.no=no
 def main():
     s=[]
+    #list to store the details of students
     n=int(input("No of students: "))
     for i in range(n):
         name=input("Enter Student "+str(i+1)+" name: ")
@@ -25,6 +26,7 @@ def main():
         locations.append(location(name,k))
     for i in range(len(s)):
         for j in range(i+1,len(s)):
+            #sorting based on marks of students
             if s[i].marks<s[j].marks:
                 s[i],s[j]=s[j],s[i]
 
