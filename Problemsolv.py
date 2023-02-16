@@ -34,6 +34,7 @@ def main():
     for i in s:
         for j in i.choices:
             z=0
+            #Allocating locations based on marks and no. of vacancies in locations
             for k in locations:
                 if j==k.name and k.no>0:
                     d[i.name]=k.name
