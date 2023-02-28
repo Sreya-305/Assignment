@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ResCss.css">
+    <script src="ResJs.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Restaurant App</h1>
+    </header>
+    <main class="container">
+        <div class="left-col">
+            <h1 class="h1-text">Tables</h1>
+            <div class="search-table">
+                <input class="search" id="search-table" type="text" placeholder="Search table">
+            </div>
+            <div class="table-cards"></div>
+        </div>
+        <div class="right-col">
+            <h1 class="h1-text">Menu</h1>
+            <div class="search-container">
+                <div class="search-menu">
+                    <input type="text" class="search" id="search-menu" placeholder="Search menu...by Course,by Food" size="50">
+                    
+                </div>
+                <select name="select-menu" id="select-menu">
+                    <option value="all">all</option>
+                    <option value="mainCourse">mainCourse</option>
+                    <option value="desserts">Desserts</option>
+                    <option value="appetizers">Appetizers</option>
+                    <option value="beverages">Beverages</option>
+                </select>
+            </div>
+            <div class="menu-cards"></div>
+        </div>
+        
+        <dialog class="show-table-data">
+
+
+            <button class="cancel">cancel</button>
+            <button class="genrate-bill" onclick="">
+              
+                <img src="./assests/bill.svg" alt="bill-img" class="bill">
+            </button>
+
+        </dialog>
+        <dialog class="show-bill">
+
+
+        </dialog>
+    </main>
+</body>
+</html>
