@@ -64,14 +64,23 @@
     </div>
     <div id="contact">
         <h1 class="heading1">CONTACT ME</h1>
-                <form action="" class="form">
+                <form action="" name="contact1" onsubmit="sendEmail(); reset(); return false;" class="form">
                     <input type="text" name="name" class="input" placeholder="Enter your name" required="required">
                     <input type="email" name="email" class="input" placeholder="Enter Your Email" required="required">
-                    <textarea name="msg" id="msg" cols="30" rows="10" required="required"></textarea>
-                    <input type="submit" value="SEND" id="send">
+                    <textarea name="msg" id="msg" cols="30" class="input1" rows="10" required="required" placeholder="Enter the message"></textarea>
+                    <button id="submit" type="submit" name="submit" value="send" class="btn btn-glance"
+                        onclick="display()">Send</button>
 
                 </form>
 
     </div>
+    <script>
+    function display() {
+        var x = document.contact1.name.value;
+        var y = document.contact1.email.value;
+        var z = document.contact1.msg.value;
+        alert("FIRST NAME:" + x + "      " + "EMAIL:" + y + "     " + "MESSAGE:" + z);
+    }
+    </script>
 </body>
 </html>
