@@ -1,0 +1,88 @@
+{
+    "tableCardList":[
+        {
+          "id": 0,
+          "tableNumber": 1,
+          "tableStatus": "open",
+          "tableTotal": 0,
+          "tableItems": []
+        },
+        {
+          "id": 1,
+          "tableNumber": 2,
+          "tableStatus": "open",
+          "tableTotal": 0,
+          "tableItems": []
+        },
+        {
+          "id": 2,
+          "tableNumber": 3,
+          "tableStatus": "open",
+          "tableTotal": 0,
+          "tableItems": []
+        }
+      ],
+    
+      "menuCardList":[
+        {
+          "id": 0,
+          "name": "Butter Chicken",
+          "type": "mainCourse",
+          "cost": 100
+        },
+        {
+          "id": 1,
+          "name": "Chocolate Brownie",
+          "type": "Desserts",
+          "cost": 30
+        },
+        {
+          "id": 2,
+          "name": "Dalgona Coffee",
+          "type": "Beverages",
+          "cost": 50
+        },
+        {
+          "id": 3,
+          "name": "Grilled chicken",
+          "type": "mainCourse",
+          "cost": 100
+        },
+        {
+          "id": 4,
+          "name": "Cheesecake",
+          "type": "Desserts",
+          "cost": 30
+        },
+        {
+          "id": 5,
+          "name": "Mojito",
+          "type": "Beverages",
+          "cost": 50
+        },
+        {
+          "id": 6,
+          "name": "Soup",
+          "type": "Appetizers",
+          "cost": 100
+        },
+        {
+          "id": 7,
+          "name": "Banana smoothie",
+          "type": "Beverages",
+          "cost": 30
+        },
+        {
+          "id": 8,
+          "name": "Chips & dips",
+          "type": "Appetizers",
+          "cost": 50
+        },
+        {
+          "id": 9,
+          "name": "Grilled pizza",
+          "type": "mainCourse",
+          "cost": 150
+        }
+      ]
+    }
