@@ -1,0 +1,297 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+
+main{
+     min-height: 100vh;
+}
+.container{
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+}
+.h1-text{
+    text-align: center;
+    padding:7px
+}
+header h1{
+    text-align:center;
+    border-bottom: 2px solid black ;
+    padding: 7px;
+}
+.left-col{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 2px solid black ;
+}
+.right-col{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.search-container{
+    display: flex;
+    flex-direction: row;
+}
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    padding: 0.75rem 1rem;
+    border-radius: 0.25em;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .search-menu{
+      display: inline;
+      position: relative;
+      width: 60%;
+      right:10%;
+  }
+  .search-table{
+      position: relative;
+      width: 60%;
+  }
+  .table-card
+{
+  
+
+  height: 20vh;
+  width: 30vw;
+  margin: 1rem;
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  box-shadow: -4px 4px 4px rgb(0 0 0 / 20%);
+}
+
+.table-card h2
+{
+  margin: 0 0 10px 0;
+}
+
+.table-card p
+{
+  margin: 0;
+}
+
+.table-card span
+{
+  font-weight: bold;
+}
+.menu-cards{
+  display: flex;
+  flex-direction: column;
+  height: 75vh;
+  overflow-y: auto;
+}
+.menu-card{
+    margin: 1rem;
+    padding: 5px;
+    border-radius: 5px;
+    height: 12vh;
+    width: 50vw;
+    background-color: aliceblue;
+}
+.menu-card {
+    user-select: none;
+    cursor: grab;
+  }
+  .dragging {
+    cursor: grabbing;
+  }
+  .item-card {
+    cursor: pointer;
+  }
+  button.create-menu-item {
+    background-color: #eaecea;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: -4px 4px 4px rgb(0 0 0 / 20%);
+    transition: all 150ms ease-in-out;
+  }
+  button.create-menu-item:hover {
+    background-color: #c4c5c4;
+    box-shadow: -2px 2px 2px rgb(0 0 0 / 20%);
+  }
+  dialog {
+    width: 600px;
+    height:400px;
+    padding: 40px 20px;
+    border: 1px solid #ccc;
+    margin-left: 400px;
+    margin-top: 150px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+  }
+  form {
+    padding: 20px;
+  }
+  h2 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: normal;
+  }
+  label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  input,
+  dialog select {
+    width: 100%;
+    height: 32px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0 10px;
+  }
+  button[type="submit"] {
+    background-color: blue;
+    color: white;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 150ms ease-in-out;
+  }
+  button[type="submit"]:hover {
+    background-color: #02258f;
+  }
+  .cancel {
+    background-color: transparent;
+    color: blue;
+    font-size: 14px;
+    border-radius: 4px;
+    padding: 9px 19px;
+    cursor: pointer;
+    border: none;
+    outline: 2px solid blue;
+    transition: all 150ms ease-in-out;
+  }
+  .cancel:hover {
+    background-color: blue;
+    color: white;
+  }
+  .delete-item,
+  .update-item {
+    color: white;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    padding: 7px 10px;
+    cursor: pointer;
+    transition: all 150ms ease-in-out;
+    margin: 1rem 0;
+  }
+  .update-item {
+    background-color: #36b436;
+  }
+  .update-item:hover {
+    background-color: rgb(54, 135, 54);
+  }
+  .genrate-bill {
+    background-color: transparent;
+    color: black;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    padding: 7px 10px;
+    cursor: pointer;
+    transition: all 150ms ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .genrate-bill:hover {
+    background-color: #dfe0df;
+    /* padding: 5px 7px; */
+  }
+  .bill {
+    fill: rgb(255, 255, 255);
+    height: 1.5rem;
+  }
+  .show-bill{
+    background-color: white;
+    margin-left:440px;
+    text-align: left;
+    border: 2px solid black;
+  
+  }
+  .show-table-data .cancel {
+    width: 100%;
+  }
+  
+  .bill-heading {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height:30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    background-color: #3d4eae;
+    color: white;
+  }
+  
+  
+  .bill-heading-text {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0 0 0 1rem;
+  } 
+  
+  .bill-heading .cancel {
+    height: 100%;
+    width: auto;
+    background-color: transparent;
+    border:none;
+    outline: none;
+    scale: 0.75;
+  }
+  
+  .table-data {
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    margin-bottom: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .table-data input {
+    width: 100%;
+    height: 2rem;
+    border: none;
+    border-bottom: 2px solid #3d4eae;
+    background-color: rgb(252, 249, 249);
+    outline: none;
+    font-size: 1rem;
+    padding: 0 0.5rem;
+  }
+  .bold {
+    font-weight: 900;
+  }
+  .generate-bill-btn-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .table-card {
+    cursor: pointer;
+  }
+  @media screen and (max-width: 620px) {
+    .container {
+      grid-template-columns: 1fr;
+    }
+  }
