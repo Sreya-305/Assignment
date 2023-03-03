@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles4.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT ME</a></li>
+            <li><a href="#portfolio">MY GALLERY</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+
+        </ul>
+    </nav>
+
+    <div id="home">
+        <section style="display:flex;justify-content:space-between;margin-top:20px;">
+            <div id="p1">
+            <div id="s1">
+                <h1 id="s11" >Hi,I am Sreya Jamma</h1>
+                <h1 id="s12">UnderGraduate</h1>
+            </div>
+            </div>
+            <div id="s2">
+                <img id="ig1" src="image1.jpg" width="60%">
+            </div>
+        </section>
+
+    </div>
+    <div id="about">
+            <h1 class="heading">About me</h1>
+            <div class="about">
+                <img src="image1.jpg" alt="My Pic">
+                <div class="name">
+                        <p>My name is Sreya Jamma. I am from Palasa,Srikakulam district.
+                            I am an engineering graduate at Aditya institute of technology and 
+                            management specialised in Computer science and engineering.I have
+                            completed my intermediate and schooling from Jawahar Navodaya
+                            Vidyalaya,Srikakulam. I have worked on two projects using machine learning.
+                            I am interested in coding and learning new technologies.  
+                        </p>
+</div>
+        </div>
+
+    </div>
+    <div id="portfolio">
+        <h1 class="headings">MY GALLERY</h1>
+        <div class="gallery">
+            <img src="pim1.jpeg" alt="">
+            <img src="pim2.jpg" alt="">
+            <img src="pim3.jpg" alt="">
+            <img src="pim4.jpeg" alt="">
+            <img src="pim5.jpg" alt="">
+            <img src="pim6.jpg" alt="">
+
+        </div>
+
+
+    </div>
+    <div id="contact">
+        <h1 class="heading1">CONTACT ME</h1>
+                <form action="https://formspree.io/f/moqzwnpv" method="POST" name="contact1" class="form">
+                    <input type="text" name="name" class="input" placeholder="Enter your name" required="required">
+                    <input type="email" name="email" class="input" placeholder="Enter Your Email" required="required">
+                    <textarea name="msg" id="msg" cols="30" class="input1" rows="10" required="required" placeholder="Enter the message"></textarea>
+                    <button id="submit" type="submit" name="submit" value="send" class="btn btn-glance"
+                        onclick="display()">Send</button>
+
+                </form>
+
+    </div>
+    <script>
+    function display() {
+        alert("Message sent successfully");
+    }
+    </script>
+</body>
+</html>
